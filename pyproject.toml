@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "algamlgram"
+version = "0.2.1"
+description = "A simple Python interface for Telegram MTProto clients"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+keywords = ["telegram", "mtproto", "python", "client", "algamlgram"]
+authors = [{ name = "ALGAMLGRAM Contributors" }]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Communications :: Chat",
+]
+dependencies = ["Telethon>=1.36,<2"]
+
+[project.optional-dependencies]
+test = ["pytest>=8", "build>=1.2", "twine>=5"]
+
+[project.urls]
+Homepage = "https://github.com/mo7sle/ALGAMLGRAM"
+Repository = "https://github.com/mo7sle/ALGAMLGRAM"
+Issues = "https://github.com/mo7sle/ALGAMLGRAM/issues"
+
+[tool.setuptools]
+packages = ["algamlgram"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
